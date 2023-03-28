@@ -1,7 +1,17 @@
-export const students = [
+export type Student ={
+    id: string;
+    nombre: string;
+    curso: string;
+    calificaciones: {
+        PrimerCuatr: string;
+        SegundoCuatr: string
+    }
+}
+
+export const students: Student[] = [
     {
         id: "1",
-        nombre: "Alejo",
+        nombre: "Benji",
         curso: "CTD",
         calificaciones: {
             PrimerCuatr: "6",
@@ -10,7 +20,7 @@ export const students = [
     },
     {
         id: "2",
-        nombre: "Alexis",
+        nombre: "Angie",
         curso: "CTD",
         calificaciones: {
             PrimerCuatr: "10",
@@ -19,7 +29,7 @@ export const students = [
     },
     {
         id: "3",
-        nombre: "Tomy",
+        nombre: "Jhoni",
         curso: "CTD",
         calificaciones: {
             PrimerCuatr: "10",
@@ -28,7 +38,7 @@ export const students = [
     },
     {
         id: "4",
-        nombre: "Ani",
+        nombre: "Juli",
         curso: "CTD",
         calificaciones: {
             PrimerCuatr: "6",
@@ -37,7 +47,7 @@ export const students = [
     },
     {
         id: "5",
-        nombre: "Sergio",
+        nombre: "Lucia",
         curso: "CTD",
         calificaciones: {
             PrimerCuatr: "7",
